@@ -1,0 +1,41 @@
+{
+  "name": "genpark-hierarchical-corporate-organization-chart-synthesizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Hierarchical corporate organization chart synthesizer generating acyclic tree reporting graphs and HRMS data mappings.",
+  "author": "genpark",
+  "category": "corporate-governance",
+  "tags": [
+    "org-chart-generator",
+    "hierarchy-graph",
+    "span-of-control",
+    "corporate-structure",
+    "hrms-mapping"
+  ],
+  "inputs": {
+    "company_name": {
+      "type": "string"
+    },
+    "employees_count": {
+      "type": "integer"
+    },
+    "executive_tiers_count": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "org_chart_id": {
+      "type": "string"
+    },
+    "total_headcount_mapped": {
+      "type": "integer"
+    },
+    "acyclic_reporting_hierarchy_verified": {
+      "type": "boolean"
+    },
+    "interactive_svg_hierarchy_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
